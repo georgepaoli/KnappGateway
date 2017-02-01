@@ -14,7 +14,7 @@ utilizados no CD da Drogaria Araujo.
 
 .. toctree::
    :maxdepth: 2
-   :caption: KNAPP -> HJ
+   :caption: HJ -> KNAPP 
 
    WmsToWcsGateway
 
@@ -22,6 +22,6 @@ utilizados no CD da Drogaria Araujo.
 
 .. toctree::
    :maxdepth: 2
-   :caption: HJ -> KNAPP
+   :caption: KNAPP -> HJ
 
    WcsToWmsGateway

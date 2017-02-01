@@ -6,6 +6,13 @@ enviar para o WMS HighJump
 
 Configuração
 -----------------------
+Requisitos mínimos:
+
+    * Windows Server 2012 R2 - 64bit
+    * .NET Framework v4.6
+    * 4GB de RAM
+    * Intel Xeon 2.60GHz
+
 Ambientes e Servidores:
 
 +-------------------------------------+-----------------------+-------------------+
@@ -20,7 +27,7 @@ Ambientes e Servidores:
 | ``WINDHTSQLCDN02\HCDNHJS``          | Servidor de Banco     | ``HOMOLOGACAÇÃO`` |
 +-------------------------------------+-----------------------+-------------------+
 
-Localização do executável no servidor de aplicação::
+Localização dos arquivos no servidor de aplicação::
 
     C:\Servicos\WcsToWmsGateway
 
@@ -33,7 +40,7 @@ Parâmetros disponíveis no **App.config**:
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``appSettings/WCS-IP``                             | Endereço IP do servidor KNAPP                                                       | ``10.85.243.1``                                                                                            |
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| ``appSettings/WCS-PORT``                           | Porta TCP/IP que a KNAPP envia as mensagens                                         | ``9802``                                                                                                   |
+| ``appSettings/WCS-PORT``                           | Porta TCP/IP que a KNAPP envia as mensagens para o WMS                              | ``9802``                                                                                                   |
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 | ``appSettings/SLEEP-VERIFICAR-SERVICO-HABILITADO`` | Tempo, em segundos, de espera para verificar novamente se o serviço está habilitado | ``10000``                                                                                                  |
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
@@ -50,7 +57,7 @@ Desinstalar::
 
 
 .. note::
-    Abra o prompt como ADMINISTRADOR
+    Execute o prompt como ADMINISTRADOR
 
 Execução
 -----------------------
@@ -63,7 +70,7 @@ Stop::
     C:\Servicos\WcsToWmsGateway\WcsToWmsGateway.exe stop
 
 .. note::
-    Abra o prompt como ADMINISTRADOR
+    Execute o prompt como ADMINISTRADOR
 
 Monitoramento
 -----------------------
