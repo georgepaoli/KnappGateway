@@ -47,9 +47,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'KnappGateway'
-copyright = '2017, george.paoli'
-author = 'george.paoli'
+project = 'KNAPP Gateways'
+copyright = '2017, Drogaria Araujo S.A'
+author = 'George Paoli'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -129,8 +129,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'KnappGateway.tex', 'KnappGateway Documentation',
-     'george.paoli', 'manual'),
+    (master_doc, 'KnappGateway.tex', 'Documentação KnappGateways Services',
+     'George Paoli - Drogaria Araujo', 'manual'),
 ]
 
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'knappgateway', 'KnappGateway Documentation',
+    (master_doc, 'knappgateway', 'Documentação KnappGateways Services',
      [author], 1)
 ]
 
@@ -150,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'KnappGateway', 'KnappGateway Documentation',
+    (master_doc, 'KnappGateway', 'Documentação KnappGateways Services',
      author, 'KnappGateway', 'One line description of project.',
      'Miscellaneous'),
 ]

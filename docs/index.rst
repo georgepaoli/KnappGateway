@@ -3,15 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to KnappGateway's documentation!
-========================================
+KNAPP Gateways Services - Documentação
+=======================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Conteúdo:
 
-   intro
-   about
+   WcsToWmsGateway
 
 Indices and tables
 ==================
