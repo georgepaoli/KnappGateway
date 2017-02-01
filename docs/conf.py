@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'KNAPP Gateways'
+project = 'KNAPP Gateways Services'
 copyright = '2017, Drogaria Araujo S.A'
 author = 'George Paoli'
 
@@ -129,8 +129,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'KnappGateway.tex', 'Documentacao KnappGateways Services',
-     'George Paoli - Drogaria Araujo', 'manual'),
+    (master_doc, 'KnappGateway.tex', 'KnappGateways Services',
+     'George Paoli - Drogaria Araujo S.A', 'manual'),
 ]
 
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'knappgateway', 'Documentacao KnappGateways Services',
+    (master_doc, 'knappgateway', 'KnappGateways Services',
      [author], 1)
 ]
 
@@ -150,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'KnappGateway', 'Documentacao KnappGateways Services',
+    (master_doc, 'KnappGateway', 'KnappGateways Services',
      author, 'KnappGateway', 'One line description of project.',
      'Miscellaneous'),
 ]
@@ -176,5 +176,3 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-

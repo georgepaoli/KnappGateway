@@ -6,15 +6,22 @@
 KNAPP Gateways Services - Documentação
 =======================================
 
+Detalhes da configuração, instalação, execução e monitoramento dos serviços criados para 
+fazer o trabalho de Gateway entre o WCS KNAPP e o WMS HighJump, 
+utilizados no CD da Drogaria Araujo.
+
+.. _wms-to-wcs-docs:
+
 .. toctree::
    :maxdepth: 2
-   :caption: Conteúdo:
+   :caption: KNAPP -> HJ
+
+   WmsToWcsGateway
+
+.. _wcs-to-wms-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: HJ -> KNAPP
 
    WcsToWmsGateway
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
