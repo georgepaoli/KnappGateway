@@ -12,7 +12,7 @@ Requisitos mínimos:
     * .NET Framework v4.6
     * 4GB de RAM
     * Intel Xeon 2.60GHz
-    
+
 Ambientes e Servidores:
 
 +-------------------------------------+-----------------------+-------------------+
@@ -47,6 +47,9 @@ Parâmetros disponíveis no **App.config**:
 | ``appSettings/SLEEP-VERIFICAR-NOVA-MENSAGEM``      | Tempo, em segundos, de espera para verificar se existe uma nova mensagem            | ``10000``                                                                                                  |
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
+.. note::
+    É necessário efetuar o stop e start do serviço após qualquer ajuste nas configurações
+
 Instalação/Desintalação
 -----------------------
 Instalar::
@@ -63,6 +66,9 @@ Desinstalar::
 
 Execução
 -----------------------
+.. warning:: 
+    **IMPORTANTE**: Antes de iniciar o serviço, é necessário desligar a interface do WMS Hight Jump, caso esteja ligada.
+    
 Start::
 
     C:\Servicos\WmsToWcsGateway\WmsToWcsGateway.exe start
@@ -87,6 +93,10 @@ Localização do log em arquivo texto::
     1. Abra o Sentinel e crie uma nova session
     2. Escolha o provider ``NLog Viewer Provider``
     3. Em seguida o protocolo ``UDP`` e porta ``9999``
+
+.. note::
+    1. Detalhes de configuração do mecanismo de log estão localizados no arquivo NLog.config. Após qualquer ajuste é necessário efetuar o stop e start do serviço
+    2. Limpeza do log: Arquivos com mais de uma semana, serão excluídos
 
 
 .. _Sentiel: http://sentinel.codeplex.com/

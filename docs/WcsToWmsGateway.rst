@@ -45,6 +45,9 @@ Parâmetros disponíveis no **App.config**:
 | ``appSettings/SLEEP-VERIFICAR-SERVICO-HABILITADO`` | Tempo, em segundos, de espera para verificar novamente se o serviço está habilitado | ``10000``                                                                                                  |
 +----------------------------------------------------+-------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
+.. note::
+    É necessário efetuar o stop e start do serviço após qualquer ajuste nas configurações
+
 Instalação/Desintalação
 -----------------------
 Instalar::
@@ -61,6 +64,9 @@ Desinstalar::
 
 Execução
 -----------------------
+.. warning:: 
+    **IMPORTANTE**: Antes de iniciar o serviço, é necessário desligar a interface do WMS Hight Jump, caso esteja ligada.
+
 Start::
 
     C:\Servicos\WcsToWmsGateway\WcsToWmsGateway.exe start
@@ -86,5 +92,8 @@ Localização do log em arquivo texto::
     2. Escolha o provider ``NLog Viewer Provider``
     3. Em seguida o protocolo ``UDP`` e porta ``9998``
 
+.. note::
+    1. Detalhes de configuração do mecanismo de log estão localizados no arquivo NLog.config. Após qualquer ajuste é necessário efetuar o stop e start do serviço
+    2. Limpeza do log: Arquivos com mais de uma semana, serão excluídos
 
 .. _Sentiel: http://sentinel.codeplex.com/
