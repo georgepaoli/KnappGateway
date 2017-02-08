@@ -4,6 +4,10 @@ WmsToWcsGateway Service
 Serviço responsável por receber as mensagens do WMS HighJump e 
 enviar para o WCS KNAPP
 
+Fluxo
+-----------------------
+.. image:: /img/fluxo-wms-to-wcs.png
+
 Configuração
 -----------------------
 Requisitos mínimos:
