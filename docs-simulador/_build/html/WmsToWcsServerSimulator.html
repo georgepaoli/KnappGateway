@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>WmsToWcsServerSimulator Service &mdash; documentação KNAPP Simulators Services 1.0</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="genindex.html"/>
+        <link rel="search" title="Buscar" href="search.html"/>
+    <link rel="top" title="documentação KNAPP Simulators Services 1.0" href="index.html"/>
+        <link rel="next" title="WcsToWmsServerSimulator Service" href="WcsToWmsServerSimulator.html"/>
+        <link rel="prev" title="KNAPP Simulators Services - Documentação" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> KNAPP Simulators Services
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">HJ -&gt; KNAPP</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WmsToWcsServerSimulator Service</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fluxo">Fluxo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracao">Configuração</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacao-desintalacao">Instalação/Desintalação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#execucao">Execução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#monitoramento">Monitoramento</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">KNAPP -&gt; HJ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="WcsToWmsServerSimulator.html">WcsToWmsServerSimulator Service</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">KNAPP Simulators Services</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>WmsToWcsServerSimulator Service</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wmstowcsserversimulator-service">
+<h1>WmsToWcsServerSimulator Service<a class="headerlink" href="#wmstowcsserversimulator-service" title="Link permanente para este título">¶</a></h1>
+<p>Serviço responsável por simular o envio de mensagens do WMS HighJump para o WCS KNAPP.
+Este serviço nada mais faz do que responder com sucesso ou falha as mensagens recebidas.
+Veja o fluxo abaixo para melhor entendimento.</p>
+<div class="section" id="fluxo">
+<h2>Fluxo<a class="headerlink" href="#fluxo" title="Link permanente para este título">¶</a></h2>
+<img alt="_images/fluxo-simulador-wms-to-wcs.png" src="_images/fluxo-simulador-wms-to-wcs.png" />
+</div>
+<div class="section" id="configuracao">
+<h2>Configuração<a class="headerlink" href="#configuracao" title="Link permanente para este título">¶</a></h2>
+<p>Requisitos mínimos:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Windows Server 2012 R2 - 64bit</li>
+<li>.NET Framework v4.6</li>
+<li>4GB de RAM</li>
+<li>Intel Xeon 2.60GHz</li>
+</ul>
+</div></blockquote>
+<p>Ambientes e Servidores:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="29%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Servidor/IP</th>
+<th class="head">Função</th>
+<th class="head">Ambiente</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">WINDHTKNAPPGW</span></code></td>
+<td>Servidor de Aplicação</td>
+<td><code class="docutils literal"><span class="pre">HOMOLOGACAÇÃO</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">WINDHTSQLCDN02\HCDNHJS</span></code></td>
+<td>Servidor de Banco</td>
+<td><code class="docutils literal"><span class="pre">HOMOLOGACAÇÃO</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Localização dos arquivos no servidor de aplicação:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>
+</pre></div>
+</div>
+<p>Parâmetros disponíveis no <strong>App.config</strong>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="35%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parâmetro</th>
+<th class="head">Descrição</th>
+<th class="head">Valor Default</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">appSettings/WCS-PORT</span></code></td>
+<td>Porta TCP/IP de envio e recebimento</td>
+<td><code class="docutils literal"><span class="pre">9801</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">appSettings/BUFFER-SIZE</span></code></td>
+<td>Tamanho maximo para leitura e escrita de mensagens</td>
+<td><code class="docutils literal"><span class="pre">12000</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">É necessário efetuar o stop e start do serviço após qualquer ajuste nas configurações</p>
+</div>
+</div>
+<div class="section" id="instalacao-desintalacao">
+<h2>Instalação/Desintalação<a class="headerlink" href="#instalacao-desintalacao" title="Link permanente para este título">¶</a></h2>
+<p>Instalar:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>\<span class="n">WmsToWcsServerSimulator</span><span class="o">.</span><span class="n">exe</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>Desinstalar:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>\<span class="n">WmsToWcsServerSimulator</span><span class="o">.</span><span class="n">exe</span> <span class="n">uninstall</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Execute o prompt como ADMINISTRADOR</p>
+</div>
+</div>
+<div class="section" id="execucao">
+<h2>Execução<a class="headerlink" href="#execucao" title="Link permanente para este título">¶</a></h2>
+<p>Start:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>\<span class="n">WmsToWcsServerSimulator</span><span class="o">.</span><span class="n">exe</span> <span class="n">start</span>
+</pre></div>
+</div>
+<p>Stop:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>\<span class="n">WmsToWcsServerSimulator</span><span class="o">.</span><span class="n">exe</span> <span class="n">stop</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Execute o prompt como ADMINISTRADOR</p>
+</div>
+</div>
+<div class="section" id="monitoramento">
+<h2>Monitoramento<a class="headerlink" href="#monitoramento" title="Link permanente para este título">¶</a></h2>
+<p>Toda troca de mensagens é registrada em arquivo texto de log.</p>
+<p>Localização do log em arquivo texto:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Servicos</span>\<span class="n">WmsToWcsServerSimulator</span>\<span class="n">logs</span>\<span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span><span class="o">.</span><span class="n">log</span>
+</pre></div>
+</div>
+<p>É possível visualizar o log em tempo real por meio do <a class="reference external" href="http://sentinel.codeplex.com/">Sentiel</a> Viewer:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Abra o Sentinel e crie uma nova session</li>
+<li>Escolha o provider <code class="docutils literal"><span class="pre">NLog</span> <span class="pre">Viewer</span> <span class="pre">Provider</span></code></li>
+<li>Em seguida o protocolo <code class="docutils literal"><span class="pre">UDP</span></code> e porta <code class="docutils literal"><span class="pre">9988</span></code></li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<ol class="last arabic simple">
+<li>Detalhes de configuração do mecanismo de log estão localizados no arquivo NLog.config. Após qualquer ajuste é necessário efetuar o stop e start do serviço</li>
+<li>Limpeza do log: Arquivos com mais de uma semana, serão excluídos</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="WcsToWmsServerSimulator.html" class="btn btn-neutral float-right" title="WcsToWmsServerSimulator Service" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="KNAPP Simulators Services - Documentação" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Drogaria Araujo S.A.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
